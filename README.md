@@ -12,7 +12,7 @@ The general idea behind this is:
 - Regularly ping a host with excellent reliability (I used Google)
 - If successful, do nothing until the next ping
 - If no response, start counting the number of failures
-- If the number of failures reaches a certain point, open and clsoe the relay - cutting the 
+- If the number of failures reaches a certain point, open and close the relay - cutting the 
 power enough to power-cycle the device
 - Wait for an allotted 'back-off' time before we try the internet connection again
 

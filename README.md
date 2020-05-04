@@ -61,4 +61,4 @@ Please submit a PR if you'd like to contribute to this project. I'm more than ha
 and accept changes, but this isn't my full-time job, so I can't guarantee a speedy response.
 
 ## License
-Please see [License.md](https://github.com/richward1/py-internet-monitor/LICENSE)
+Please see [License.md](/LICENSE)

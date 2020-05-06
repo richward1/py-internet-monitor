@@ -37,14 +37,17 @@ Currently, you can run the script with `python monitor.py`, which will run in yo
 shell session, taking over your shell and stopping when the shell is closed.
 
 To run the script in the background:
-```shell script
-python monitor.py &
-```
 
-To run the script in the background and stay running when the shell is closed:
-```shell script
-nohup python monitor.py &
-```
+1. Make it executable
+
+    ```shell script
+    chmod +x monitor.py
+    ```
+2. Run it
+
+    ```shell script
+    nohup ./monitor.py &
+    ```
 
 Take note of the PID that is printed in your shell when you start the script, as you'll need
 it if you want to kill the process.

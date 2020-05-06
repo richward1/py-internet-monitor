@@ -4,7 +4,7 @@ Monitor
 Primary entrypoint for the program. Run this script to start the monitoring process.
 Adjust the variables at the top of this file accordingly to your needs.
 """
-
+#! /usr/bin/env python
 from ping import ping
 import relay, time, logger
 

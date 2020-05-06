@@ -16,13 +16,20 @@ The general idea behind this is:
 power enough to power-cycle the device
 - Wait for an allotted 'back-off' time before we try the internet connection again
 
+## Prerequisites
+It is recommended that you run on Raspbian, so you have the GPIOzero library installed, and don't have to use sudo.
+
 ## Getting Started
 1. Clone this repo
     ```shell script
     git clone https://github.com/richward1/py-internet-monitor.git
     ``` 
+2. Make `monitor.py` executable.
+    ```
+    chmod +x monitor.py
+    ```
 
-2. Run the `monitor.py` script
+3. Run the `monitor.py` script
     ```shell script
     python monitor.py
     ```
@@ -38,16 +45,9 @@ shell session, taking over your shell and stopping when the shell is closed.
 
 To run the script in the background:
 
-1. Make it executable
-
-    ```shell script
-    chmod +x monitor.py
-    ```
-2. Run it
-
-    ```shell script
-    nohup ./monitor.py &
-    ```
+```shell script
+nohup ./monitor.py &
+```
 
 Take note of the PID that is printed in your shell when you start the script, as you'll need
 it if you want to kill the process.
